@@ -1,5 +1,7 @@
 # Projet IML
 
+Membre de groupe: Mohamed OUTLOUHOU & Ndeye-Maguette DIAGNE
+
 ## Description des objectifs
 
 L’objectif de notre projet est de créer un robot interactif qui peut explorer une zone, un lieu en éxécutant des commandes vocales, au lieu d'un joystick. Exemple: « Aller tout droit » le robot doit aller tout droit de sa position. 

@@ -1,15 +1,10 @@
 import speech_recognition as rv #pip install SpeechRecongnition == installation de la reconnaissance vocale rv
 import pyttsx3 #pip install pyttsx3 == installer texte to speech
 #pip install PyAudio est aussi necessaire
-import smtplib # la librairie d'envoie de email INSTALLER PAR DEFAUT
 import datetime
 import pyautogui
-import webbrowser as wb
 from time import sleep
 from info_conf import adresse_envoi, pwd, vers # importer à partir du fichier d'info confidence  
-from email.message import EmailMessage
-
-
 
 
 engine = pyttsx3.init()
@@ -58,23 +53,46 @@ def priseCMDmicro():
         return "Rien"
     return req
 
+def move_forward():
+    parler("je marche en avant")
+    vel = Twist()
+    vel.linear.x= 0.1 
+    pub_cmd_vel.publish(vel)
+
+def turn_to_right():
+    parler("je tourne à droite")
+    vel = Twist()
+    vel.angular.z= -0.1 
+    pub_cmd_vel.publish(vel)
+
+def turn_to_left():
+    parler("je tourne à gauche")
+    vel = Twist()
+    vel.angular.z= 0.1 
+    pub_cmd_vel.publish(vel)
+
+def move_backward():
+    print("Mache en arrière")
+    vel = Twist()
+    vel.linear.x= -0.1 
+    pub_cmd_vel.publish(vel)
+
 if __name__=="__main__" : 
     deb_politesse()
-    parler("Comment puis-je vous aider?")
+    parler("Que voulez vous que je fasse?")
     while True:
         req=priseCMDmicro().lower()
-        if 'tourner' in req:
-            print()
-            # le robot tourne
+        if 'tourner à gauche' in req:
+            turn_to_left()
         if 'aller tout droit' in req:
-            print()
             # le robot va tout droit
+            move_forward()
         if 'stop' in req:
-            print()
+            stop()
             # le robot s'arrete
-        if 'faire démi-tour' in req:
-            print()
-            # le robot retourne à son point de départ
+        if 'tourner à droite' in req:
+            # le robot rourne à droite
+            turn_to_right()
         if 'quitter' in req :
             parler("au revoir")
             quit()

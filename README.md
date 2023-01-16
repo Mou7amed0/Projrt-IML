@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/74309471/212469031-63905d19-0c53-4ca7-
 
 Notre premier défis était de choisir un sujet. On a visité les sites de projet d’IA comme Kaggle pour avoir un sujet. Les sujets étaient intéressants soit on avait pas beaucoup de temps soit le sujet était complexe. Du coup on a du pour chaque aspect du projet trouver un sujet et à la fin en former un.
 Pour traiter automatiquement le langage, on a eu des problèmes de version pour installer les bibliothèques SpeechRecognition et Pyttsx3. On a du changer notre version de pip et installer une autre bibliothèque intermediaire PyAudio pour que ça fonctionne.
-Un deuxième déis était de connecter les deux parties; SpeechRecognition et Navigation. Pour cette dernière nous avons rencontré beaucoup de problème avec l'outil "TheConstructsim", pour simuler le robot. Et donc on choisi de remplacer l'outil de control "twist_keyboard" par contrôl par la voix.
+Un deuxième défis était de connecter les deux parties; SpeechRecognition et Navigation. Pour cette dernière nous avons rencontré beaucoup de problème avec l'outil "TheConstructsim", pour simuler le robot. Et donc on choisi de remplacer l'outil de control "twist_keyboard" par contrôl par la voix.
 
  ## Travaux futurs
 

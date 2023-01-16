@@ -25,4 +25,4 @@ Le robot arrive à identifier les commandes vocales mais n’arrive pas à ce d�
 Retenues
 
 * Le travail en groupe, le fait de pouvoir se diviser les taches et que chacun puisse faire dont il se sent à l’aise.
-* Travailler en présentiel est beaucoup mieux pour communiquer avec ses co-équpiers, et aider les uns les autres pour atteindre l'objectif
+* Travailler en présentiel est beaucoup mieux pour communiquer avec ses co-équpiers, et aider les uns les autres pour atteindre l'objectif.
